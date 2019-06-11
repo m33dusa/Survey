@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!--Header begins-->
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Coiny|Roboto|Merriweather|Ubuntu|Aleo|Anton|Abril+Fatface|Indie+Flower");
+
+/*backgrounds*/
+body{
+  background-image: url("https://cdn.dribbble.com/users/5031/screenshots/3713646/attachments/832536/wallpaper_mikael_gustafsson.png");
+}
+
+header{
+  background-image: url("http://papers.co/wallpaper/papers.co-vg72-rain-morning-dew-drop-blur-pattern-34-iphone6-plus-wallpaper.jpg");
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  padding-bottom: 0px;
+}
+
+/*fonts*/
+#title{
+  font-family: Aleo;
+  color: black;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+h1{
+  font-size: 53px;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+
+#name-label, #age-label, #email-label {
+  font-family: Ubuntu;
+  font-size: 17px;
+}
+
+p{
+  font-family: Roboto;
+  font-size: 18px;
+  color: black;
+}
+
+h2{
+  font-family: Roboto;
+  font-size: 18px;
+  color: black;
+}
+
+/*layouts*/
+#description{
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: -20px;
+  padding-top: 20px;
+}
+
+#survey-form{
+  font-size: 20px;
+  font-family: Merriweather, sans-serif;
+  display: block-inline;
+  margin-left: relative;
+}
+
+form{
+  border-radius: 10px;
+  background-image: url("http://papers.co/wallpaper/papers.co-vg72-rain-morning-dew-drop-blur-pattern-34-iphone6-plus-wallpaper.jpg");
+  padding: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: -20px;
+}
+
+#name{
+  width: 50%;
+  padding: 5px 10px 5px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 2%;
+}
+  
+#number{
+  width: 50%;
+  padding: 5px 10px 5px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 5%;
+}
+
+#email{
+  width: 50%;
+  padding: 5px 10px 5px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-left: 2%;
+}
+
+input:invalid {
+  box-shadow: 0 0 10px 1px red;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+#containerA{
+  width: auto;
+  height: auto;
+  background: none;
+  float: left;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 4px;
+  margin-left: 12px;
+}
+
+#containerB{
+  width: auto;
+  height: auto;
+  background: none;
+  float: left;
+  margin-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: -3px;
+  margin-bottom: -45px;
+}
+
+#comment{
+  width:360px;             
+  height:200px;
+  font-size: 18px;
+  margin-top: -5px;
+}
+
+#submit{
+  font-size:18px;
+  font-family: Aleo;
+  display: flex;
+  color: black;
+  background-color: none;
+ /* background-image:url("https://cdn.dribbble.com/users/5031/screenshots/3713646/attachments/832536/wallpaper_mikael_gustafsson.png");*/
+  padding-right:13px;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.footer{
+  font-family: indie flower;
+}
+
+</style>
+
+<header>
+  <h1 id="title">SURVEY</h1>
+</header>
+
+<!--Header ends-->
+
+<body>
+  <form id="survey-form">
+
+    <!--Description begins-->
+    <p style="text-align: center" id="description">Complete the FreeCodeCamp profile survery below.<br></br>
+    </p>
+    <!--Description ends-->
+
+    <!--Survey sheet begins-->
+    <fieldset>
+      <legend align="center">Complete Survey Form</legend>
+      <fieldset style="padding-left: 10px; ">
+        <legend>Biographical Information</legend>
+        <div id="survey-form">
+          <div id="name-label">
+            <h2>Name:
+              <input id="name" type="text" placeholder="Enter name..." required </input></h2>
+            <div id="age-label">
+              <h2>Age:
+                <input type="number" id="number" placeholder="Enter age..." min="1" max="99" required </input></h2>
+
+              <h2> Gender:
+                <select>
+            <option>Select</option>
+          <option>Cisgender (Male or Female)</option>
+        <option>Gender Fluid</option>
+          <option>Transgender</option>
+          <option>Bigender</option>
+           <option>Other</option>  
+              <br></select>
+
+                <div> Race:
+                  <select>
+            <option>Select</option>
+          <option>Human</option>
+          <option>Black or African American</option>
+        <option>White or Caucasian American</option>
+          <option>Hispanic or South American</option>
+          <option>Asian or Asian American </option>
+          <option>Native American</option>
+          <option>Mixed Race</option>
+           <option>Other</option>  
+              <br></select></h3>
+                </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Academic Information</legend>
+        <h2 id="email-label">
+          <h2>Email:
+            <input type="email" id="email" placeholder="Email@freecodecamp.com" required </h2></input>
+
+            <!--Request education level with drop-down option-->
+            <h2>Level of Education:
+
+              <select>
+          <option>Select</option>
+        <option>PhD</option>
+          <option>Graduate School</option>
+          <option>College</option>
+          <option>Trade School</option>
+          <option>College</option>
+         <option>High School</option>
+           <option>Other</option>  
+              <br></select></h2>
+            </div>
+
+            <!--Selection -->
+            <div>
+
+              <h2> Certifications (select all that apply):<br></h2>
+
+              <p>
+                <input type="checkbox" name="checkbox"> Responsive Web Design Certification</input><br>
+
+                <input type="checkbox" name="Javascript Algorithms and Data Structures Certification"> Javascript Algorithms and Data Structures Certification<br>
+
+                <input type="checkbox" name="Front End Libraries Certification"> Front End Libraries Certification<br>
+
+                <input type="checkbox" name="Data Visualization Certificate"> Data Visualization Certification <br>
+
+                <input type="checkbox" name="Apis and Microservices Certification"> Apis and Microservices Certification<br>
+
+                <input type="checkbox" name="Information Security and Quality Assurance Certification"> Information Security and Quality Assurance Certification</input><br>
+
+                <input type="checkbox" name="None"> None</input><br>
+
+                <input type="checkbox" name="Other"> Other</input><br></p>
+              <!--End Selection -->
+
+              <!--Start radio options-->
+              <h2> Coding Experience:</h2>
+              <div>
+                <p>
+                  <input type="radio" name="new" value=new>(0-1 years of experience): New Coder</div>
+              </p>
+
+              <div>
+                <p>
+                  <input type="radio" name="mid" value=mid>(1-3 years of experience): Experienced Coder</p>
+              </div>
+
+              <div>
+                <p>
+                  <input type="radio" name="expert" value=exp>(4-7 years of experience): Expert Coder</p>
+              </div>
+
+              <div>
+                <p>
+                  <input type="radio" name="master" value=mast>(8+ years of experience): Master Coder</p>
+              </div>
+      </fieldset>
+      <!--End radio options-->
+
+      <!--FreeCodeCamp Survey-->
+      <fieldset>
+        <legend>Select the best option for you</legend>
+        <fieldset style="border:none">
+          <div id="containerA">
+            <p>1. I am qualified for an entry level position in my certification:</div>
+          <div id="containerB" style="margin-top: -10px">
+            <input type="radio">True</input>
+            <input type="radio">Maybe</input>
+            <input type="radio">False</input>
+          </div>
+          </p>
+        </fieldset>
+
+        <fieldset style="border:none">
+          <div id="containerA">
+            <p>2. I have the knowledge and tools to successfully<br> complete projects in my certification:</div>
+          <h2 id="containerB" style="margin-top: -10px">
+            <input type="radio">True</input>
+            <input type="radio">Maybe</input>
+            <input type="radio">False</input>
+            </p>
+        </fieldset>
+
+        <fieldset style="border:none">
+          <div id="containerA">
+            <p>3. FreeCodeCamp prepared me to succeed in my field:</div>
+          <h2 id="containerB" style="margin-top: -10px">
+            <input type="radio">True</input>
+            <input type="radio">Maybe</input>
+            <input type="radio">False</input>
+            </p>
+        </fieldset>
+
+        <fieldset style="border:none">
+          <div id="containerA">
+            <p>4. I feel like I can benefit from additional training:</div>
+          <h2 id="containerB" style="margin-top: -10px">
+            <input type="radio">True</input>
+            <input type="radio">Maybe</input>
+            <input type="radio">False</input>
+            </p>
+        </fieldset>
+
+        <fieldset style="border:none">
+          <div id="containerA">
+            <p>5. I am going to continue studying with FreeCodeCamp:</div>
+          <h2 id="containerB" style="margin-top: -10px">
+            <input type="radio">True</input>
+            <input type="radio">Maybe</input>
+            <input type="radio">False</input>
+            </p>
+        </fieldset>
+
+        <fieldset style="border:none">
+          <div id="containerA">
+            <p>6. I will recommend FreeCodeCamp to my family and friends:</div>
+          <h2 id="containerB" style="margin-top: -10px">
+            <input type="radio">True</input>
+            <input type="radio">Maybe</input>
+            <input type="radio">False</input>
+            </p>
+        </fieldset>
+
+        <fieldset style="border:none">
+          <div id="containerA">
+            <p>I would like to see improvements in the FreeCodeCamp curriculum. <br>(Please comment below):</div>
+          <h2 id="containerB" style="margin-top: -10px">
+            <input type="radio">True</input>
+            <input type="radio">Maybe</input>
+            <input type="radio">False</input>
+            </p>
+        </fieldset>
+      </fieldset>
+
+      <!--Add instruction for comments-->
+      <fieldset style="border:none;padding-top: 0px">
+        <h2>Comment:<br></h2>
+        <textarea id="comment"></textarea>
+        <div>
+          <button id="submit">Submit</button>
+        </div>
+        </h2>
+        <!--Survey sheet ends-->
+
+      </fieldset>
+  </form>
+</body>
+
+<!--Footer begins-->
+<footer>    
+  <div><p>&#169 Copyright 2019 This FreeCodeCamp Survey Project was created by <a href="https://www.freecodecamp.org/zalpha" target="_blank"> Z. Alpha</div></p>
+    </footer> 
+
+<!--End footer-->
